@@ -1,0 +1,241 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #ffffff;
+  margin: 0px;
+  background-color: #bc93d1;
+  font-family: 'Modern Antiqua', cursive;
+}
+.logo-info img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+a:hover {
+  color: #d2fe4c;
+}
+a {
+  color: #51f0e8;
+}
+.suggest:hover {
+  color: #dd3497;
+}
+/* navbar */
+.navbar {
+  background-color: #ffffff;
+}
+.nav-link {
+  color: #dd3497;
+  font-size: 1.3em;
+}
+#sug {
+  background-color: #51f0e8;
+}
+/* navbar END */
+.row h2 {
+  color: #51f0e8;
+}
+/* Carousel*/
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 49rem;
+  background-color: #777;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 49rem;
+}
+/* Carousel .section */
+
+/* Center align the text within the three columns below the carousel */
+.section .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.section h2 {
+  font-weight: 400;
+}
+.section .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* Carousel-END */
+
+/* info */
+
+.divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the .section headings */
+.info-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+/* info End */
+
+/* Match */
+.popular {
+  padding: 40px;
+  background-color: #ffffff;
+  margin-bottom: 4em;
+  background-image: url('../img/cupcake2.jpg');
+}
+.card {
+  background-color: #ffb2b2;
+  color: #ffffff;
+  text-align: center;
+}
+.card-img-top {
+  height: 200px;
+}
+#sugar, #spice, #nice {
+  display: none;
+}
+.button-outer {
+    width:100%;
+    text-align: center;
+}
+.inner {
+    display: inline-block;
+}
+#sugbtn, #spibtn {
+  height:70px;
+  width:100px;
+  margin-bottom: 40px;
+}
+#nibtn {
+  height:70px;
+  width:150px;
+  margin-bottom: 40px;
+}
+/* Match - END */
+
+.jumbotron {
+  margin-top: 75px;
+  height: 450px;
+  min-height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cakepage {
+  background-image: url('../img/ck.jpg');
+}
+
+#pastrypage {
+  background-image: url('../img/pastry.jpg');
+}
+
+#piepage {
+  background-image: url('../img/pie.jpg');
+}
+#pricingpage {
+  background-image: url('../img/sub.jpg');
+}
+
+.display-3 {
+  margin: 80px auto;
+}
+
+/* centers text in rows */
+#rowcenter {
+  text-align: center;
+}
+.card-header  {
+  background-color: #dd3497;
+}
+.btn {
+  background-color: #51f0e8;
+}
+.btn:hover {
+  background-color: #d2fe4c;
+  color: #000000;
+}
+/* join banners */
+.join {
+  text-align: center;
+  padding: 60px;
+  background-color: pink;
+  background-image: url('../img/sprinkle.jpg');
+  color: #000000;
+}
+.recipe-divide {
+  margin: 1rem 0;
+}
+.display-4 {
+  color: #000000;
+}
+#recipe-content {
+  background-color: #d2fe4c;
+  color: #000000;
+}
+.pink {
+  color: #dd3497
+}
+#pink2 {
+  color: #dd3497
+}
+.inner-container {
+  margin-left: 10px auto;
+}
+.recipe-title {
+  margin-top: 2em;
+  color: #000000;
+}
+.widgets {
+  color: #51f0e8;
+}
+.ingredients {
+  margin-top: 50px;
+}
+#info {
+  text-align:center;
+}
+.info-image {
+  margin-bottom: 50px;
+}
+#ads {
+  margin-top: 50px;
+}
+
+form {
+  text-align: center;
+}
+/* Responsive css */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .info-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .info-heading {
+    margin-top: 7rem;
+  }
+}

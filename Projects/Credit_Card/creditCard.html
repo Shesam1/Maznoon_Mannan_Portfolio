@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credit Card Validation</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+<style type="text/css">
+
+	h1 {
+		padding: 20px;
+		margin: 10px auto 10px auto;
+		background-color: white;
+		font-size: 2em;
+		font-family: 'Roboto Mono', monospace;
+		color: blue;
+		opacity: .89;
+		width: 50%;
+	}
+	body {
+		background-image: url("http://jrlab.science/wp-content/uploads/2017/06/streaming.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: black;
+		padding: 20px;
+		color: blue;
+		text-align: center;
+		font-weight: bold;
+	}
+	.content {
+		background-color: orange;
+		padding: 20px;
+		margin: 10px auto 10px auto;
+		width: 50%;
+		opacity: .92;
+		position: relative;
+		top: 120px;
+		font-size: 1.5em;
+		font-family: 'Orbitron', sans-serif;
+	}
+	button[type="button"]:hover {
+		border: 1px solid blue;
+		background-color: #2affff;
+		color: white;
+		cursor: pointer;}
+</style>
+
+</head>
+
+<body>
+
+<h1>CREDIT CARD VALIDATION</h1>
+
+<!--div to style content -->
+<div class="content">
+<p> To validate your new card, please input your credit card number without dashes below: </p>
+
+<!--form with a button that activates function when clicked-->
+<form>
+<input type="text" id="card" name="cardNumber" placeholder="Enter Credit Card Number">
+<button type="button" onclick="validateCreditCard()">Submit</button>
+</form>
+
+<!--credit card validation result appears here-->
+<p id="first"></p>
+
+<script type="text/javascript">
+
+//function that validates credit card number
+function validateCreditCard() {
+var x, outcome;
+	x = document.getElementById("card").value;
+	if (isNaN(x) || x<=1111111111111111 || x==" " || (x%2)!==0 || x.length!==16 || (x%2222222222222222)==0) {
+		outcome = "Invalid Number";
+		console.log("False");
+	} else {
+		outcome = "Thank You! You Can Use Your Card in 1-2 Business Hours.";
+		console.log("True");
+		}
+	document.getElementById("first").innerHTML= outcome;
+}
+</script>
+</div>
+
+</body>
+</html>

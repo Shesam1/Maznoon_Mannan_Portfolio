@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Maznoon Mannan's Cash Register Assignment -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cash Register</title>
+<style>
+	body {
+		background-color: #062f4f;
+		padding: 20px;
+		font-family: arial, sans-serif;
+		font-size: 20px;	
+	}
+	h1 {
+		background-color: #ccee00;
+		padding: inherit;
+		color: white;
+	}
+	p {
+		background-color: #69FB24;
+		padding: 15px;
+		color: black;
+	}
+	#total {
+		background-color: #ccee00;
+		padding: 15px;
+		color: black;
+	}
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+<h1>JavaScript Grocery</h1>
+
+<img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2013/06/fruit-stand.jpg" alt="fruit stand" width="560" height="360">
+<p>Welcome to JavaScript Grocery, the best online Supermarket with the most superb fruit you will find on this side of the ocean! Please input what you would like to buy and we will calculate your bill total right away.</p>
+
+<!-- created paragraph ids in order to replace text with receipt values of customer -->
+<p id="first"></p>
+<p id="second"></p>
+<p id="third"></p>
+<p id="total"></p>
+
+<script type="text/javascript">
+
+	// a function that will be called to write bill total on page
+	function cashRegister() {
+	
+	// creating an array for the types of fruit that will be bought
+	var fruits = [" Oranges ", " Apples ", " Grapefruits ", " Peaches ", " Pears "];
+	
+	// an array for how many of each fruit bought which is written onto the page
+	var numFruit = new Array();
+	  for (i=0; i<fruits.length; i++) {
+		numFruit.push(prompt("How many " + fruits[i] + " do you want to buy? "));
+	}
+	document.getElementById("first").innerHTML= 'You have chosen to buy: <br />' + numFruit[0] + fruits[0] + ', ' + numFruit[1] + fruits[1] + ', ' + numFruit[2] + fruits[2] + ', ' + numFruit[3] + fruits[3] + ', ' + numFruit[4] + fruits[4] + '<br /><br />';
+	
+	// an array for the price of each item
+	var $price=[2,1,6,4,3];
+	document.getElementById("second").innerHTML= 'The price of each fruit is: <br />$' + $price[0] + ' per ' + fruits[0] + ', $' + $price[1] + ' per ' + fruits[1] + ', $'+ $price[2] + ' per ' + fruits[2] + ', $' + $price[3] + ' per ' + fruits[3] + ', and $' + $price[4] + ' per ' + fruits[4] + '<br /><br />';
+	
+	// another array is made to calculate the subtotal of each fruit
+	var subTotal = new Array();
+	  for (i=0; i<fruits.length; i++) {
+		subTotal.push(numFruit[i] * $price[i]);
+	}
+	document.getElementById("third").innerHTML = 'The subtotals for each fruit are: <br />' + fruits[0] + ' cost $' + subTotal[0] + ', ' + fruits[1] + ' cost $' + subTotal[1] + ', ' + fruits[2] + ' cost $' + subTotal[2] + ', ' + fruits[3] + ' cost $' + subTotal[3] + ', and ' + fruits[4] + ' cost $' + subTotal[4] + '<br /></br />';
+	
+	// created a loop to add subtotals together and calculate the bill total
+	var billTotal = 0
+		for (i=0; i<fruits.length; i++) {
+			billTotal += subTotal[i];
+		}
+		document.getElementById("total").innerHTML = "Your grand total amounts to $" + billTotal + ". Please pay by cash or credit. Thank you for your patronage and please come again. Your next purchase will have a 10% discount! ";
+	}
+	
+	// calling the function to release the output
+	cashRegister();
+	
+</script>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Age Calculator</title>
+	<style>
+		h1 {
+			text-align: center;
+			background-color: rgb(14, 154, 173);
+			color: white;
+			font-family: AR BERKLEY; Arial;
+		}
+		body {
+			background-color: rgb(245, 157, 227);
+			color: rgb(2, 109, 125);
+			font-family: Helvetica, Arial, sans-serif;
+			line-height: 1.5;
+			font-size: 17px;
+		}
+		#age {
+			font-weight: bold;
+			text-transform: uppercase;
+			color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Aging Fabulously</h1>
+	
+	<center>
+	<img src="http://s3.media.squarespace.com/production/2121433/19309549/wp-content/uploads/2011/06/08talk-yaeger-tmagArticle-e1308073734375.jpeg" alt="fabulous older women">
+	<p>Listed below is the age you will be in whatever year you have chosen. Nothing special here. No magic involved, just indulging your laziness by doing the math for you. Congratulations, your brain can stay on the couch.<br />
+	Honestly speaking though, you're not dead yet. Gladys Burrill ran a marathon at the age of 92, Teiichi Igarashi climbed Mt. Everest at the ripe age of 100 and Diana Nyad swam from Cuba to Florida when she was 64 years old.
+	<br /> These three champions proved that age is but a number.<br />
+	If you thought I was trying to make you feel bad about yourself, then you would be correct.</p>
+	
+	<!-- created div id to style javascript output -->
+	<div id="age">
+	<script type="text/javascript">
+
+	// prompt windows asking for values are created
+	var name = prompt("What is Your Name?");
+	var birth = prompt("What year were you born in?");
+	var prediction = prompt("Prediction Year");
+	// figures out how old user will be
+	var age= (prediction - birth);
+	// will write the final output on page
+	document.write('Hi ' + name + '! You were born in the year ' + birth + ' and by the year ' + prediction + ' you will be ' + age + ' years young.');
+	
+	</script>
+	</div>
+	
+	</center>
+	
+</body>
+</html>

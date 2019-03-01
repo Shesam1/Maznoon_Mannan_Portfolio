@@ -1,0 +1,38 @@
+body {
+	background-color: #0000ff;
+	background-image: url(../imageswap/france1.jpg);
+	background-size: cover;
+	text-align: center;
+	color: #000000;
+}
+h1,h2 {
+	margin: 10px auto 10px auto;
+	width: 40%;
+	opacity: .75;
+}
+h1 {
+	background-color: #000066;
+	color: #ffffff;
+	padding: 15px;
+	font-family: 'Ewert', cursive;
+}
+h2 {
+	background-color: #7d7d7d;
+	color: #ffffff;
+	padding: 15px;
+	top: 40px;
+	position: relative;
+	font-family: 'Gravitas One', cursive;
+}
+#content {
+	background-color: #000000;
+	padding: 30px;
+	margin: 10px auto 10px auto;
+	width: 30%;
+	position: relative;
+	top: 80px;
+	overflow: auto;
+}
+#Image1 {
+	border: 10px #000000;
+}

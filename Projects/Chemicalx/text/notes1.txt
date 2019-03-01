@@ -1,0 +1,29 @@
+-Theme: International Food for Beginner to Medium level (home cooks)
+-Sections: Diabetic, Healthy, Vegetarian, Gluten free, drinks,dessert
+-ads on the side so not too obnoxious
+-sign up for recipe of the day, newsletter
+
+
+-use bootsrap for css and web layout[learn how to do it]
+-bootstrap carousel on homepage-recommend diff parts of the page
+-sticky navbar
+-search recipes bar - browse dropdown menu w/ categories; ingredient search
+-CONTACT: follow us on social media apis - make new ones for website,or brand (twitter, pininterest, facebook, instagram)
+-have social media apis for pple to tweet out the page,etc.
+-at least 5 categories w/ rounded image windows-links to that category
+-Breadcrumbs- shows the path we clicked through
+-recipes recommends ingredients and links it to places where you can buy it like Amazon Fresh (advertising opportunity)
+-create sign in/profile page where they can save their recipes
+
+
+
+websites:
+- allrecipes.com
+- thechew.com
+-foodnetwork.com
+
+formally under the closing ul in the header tag:
+<form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>

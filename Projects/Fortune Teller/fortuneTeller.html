@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fortune Teller</title>
+	<style>
+		body {
+                background-color: rgb(48, 2, 48);
+                color: rgb(169, 136, 242);
+                font-family: cursive;
+                line-height: 1.5;
+		}
+		h1 {
+                text-align: center;
+                background-color: rgb(6, 55, 64);
+				font-family: verdana;
+                color: white;
+		}
+		h2 {
+                text-align: center;
+                background-color: rgb(6, 55, 64);
+				font-family: verdana;
+                color: white;
+		}
+	</style>
+<body>
+	<center>
+	<h1>Seek Your Future</h1>
+	<img src="https://img00.deviantart.net/ed0b/i/2017/235/3/5/hand_of_the_gods__prescience_by_eksafael-dbl2560.jpg" alt="fortune teller" width="461" height="339">
+	<p><em>Ye weary traveler of the arduous paths of life. If ye seek all the answers to what fate lies in store for ye then behold the wonders of mine prophecies. Yet, tread ever so carefully. Such knowledge can be a burden and may attract dark forces to thine doorstep. Still curious? Then welcome to the marvels of the mystical realm!<em></p>
+	<a href="G:/ET 712/Assignments/Assignment 1/assignment1_MaznoonMannan.html"
+  onMouseover="window.alert('We are not liable for any repercussions that may result from your fortune nor are we responsible for the quality of your life, even if your spouse has three heads.');">Enter If You Dare</a>
+	<h2>Fortune</h2>
+	<p id="replace"><em>Answer the questions and discover your future.<em></p>
+	<!-- created id so that paragraph will be overwritten by fortune output -->
+  <script type="text/javascript">
+	  window.alert("SEEK THINE FATE...");
+	  // Window alert will pop up
+	  var name = prompt("State Your Name");
+	  var job = prompt("Profession You Admire");
+	  var home = prompt("Geographic Location");
+	  var spouse = prompt("Future Spouse");
+	  var kids= prompt("Random Number");
+	  var lucky = prompt("State Another Number");
+	  var omen = prompt("State an Object or an Animal");
+	  var animal= prompt("State Any Animal");
+	  // creates prompt boxes to input fortune outcome
+	  var fortune= 'Welcome Honored ' + name + '. You will get married and most definitely divorced to ' + spouse + ' and sell your ' + home + '. Your ' + kids + ' kids will grow up and leave you alone but still send a check to you every month so hey, at least there is that ' + '. Your lucky number, from which you might win the lottery with, is ' + lucky + '. You will somehow die through contact with a ' + omen + ', so avoid it all costs if you think you can defeat fate. ' + ' After you die, you will be reincarnated as a ' + animal + '.';
+	  document.getElementById("replace").innerHTML = fortune;
+	  // replaces paragraph 2 content with the outcome of the fortune
+	  document.write("Enjoy Your Life!"); 
+	</script>
+	</center>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<!--There was a missing opening header tag-->
+<!--nav with links at top -->
+<header>
+<div class="content-wrapper" id="header">
+		<img src="img/hrp@2x.png" class="logo" alt="Harry Potter Logo" width="200" height="80">
+		<nav>
+			<ul>
+				<li><a href="https://www.pottermore.com/">Pottermore</a></li>
+				<li><a href="https://www.harrypottertheplay.com/us/">Tickets</a></li>
+				<li><a href="https://twitter.com/HPPlayNYC">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<!--div for banner at top-->
+<div class="hero">
+	<h1>Welcome to the Wizarding World of Harry Potter</h1>
+	<p>Top 15 Harry Potter Characters</p>
+</div>
+
+<!--div for paragraph content-->
+<main role="main">
+	<div class="content-wrapper">
+		<!--press-quote id for quotes array-->
+		<p id="press-quote"></p>
+
+		<p>In 1997, J.K. Rowling released the first book in the Harry Potter series and ever since then
+			the world has been shook. Her series launched a cultural revolution that encouraged a whole generation
+			to love reading again. Whether you like it or hate the series, there is no denying the impact it has made on
+			pop culture and literature. Rowling continues to expand upon her complex universe with the latest
+			installments of <em>Fantastic Beasts and Where to Find Them</em> and now the Broadway play <em>Harry Potter and the Cursed Child</em>!</p>
+
+		<h2><em>Harry Potter and the Cursed Child</em></h2>
+		<figure>
+			<img src="img/harry-son@2x.jpg" alt="Harry and Son">
+			<figcaption>Harry and his son in the Cursed Child</figcaption>
+		</figure>
+		<p><em>Harry Potter and the Cursed Child</em> officially opens on Broadway on Sunday, April 22, 2018! It jumps
+		the story forward to reveal a now adult Harry, his son and the issues they struggle with. In honor of the series,
+	  let's refresh our memories before the play premieres by looking back on some of the best characters in
+		the Harry Potter Universe and make some ecards out of it!</p>
+
+		<p id="house"></p>
+	</div>
+</main>
+
+<!--character list-->
+<div class="outer-wrapper">
+	<header class="clearfix">
+		<h1>Characters</h1>
+		<select id="charac-list">
+			<option value="hp">Choose a Character</option>
+			<option value="hp">Harry Potter</option>
+			<option value="hg">Hermione Granger</option>
+			<option value="rw">Ron Weasley</option>
+			<option value="ll">Luna Lovegood</option>
+			<option value="nl">Neville Longbottom</option>
+			<option value="ss">Severus Snape</option>
+			<option value="mm">Minerva McGonagall</option>
+			<option value="ad">Albus Dumbledore</option>
+			<option value="rh">Rubeus Hagrid</option>
+			<option value="sb">Sirius Black</option>
+			<option value="rl">Remus Lupin</option>
+			<option value="nt">Nymphadora Tonks</option>
+			<option value="mw">Molly Weasley</option>
+			<option value="dm">Draco Malfoy</option>
+			<option value="db">Dobby</option>
+			<option value="vm">Voldemort</option>
+		</select>
+	</header>
+
+<!--what aooears before you click on a character-->
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="img1/hp.jpg" alt="Character of HP" width="300" height="300">
+				<p id="info-name">Harry Potter</p>
+			</div>
+		</div>
+		<div class="info-holder">
+			<p><strong>Birthdate: </strong><span id="info-birthdate">31 July 1980</span></p>
+			<p><strong>Gender: </strong><span id="info-gender">Male</span></p>
+			<p><strong>Species: </strong><span id="info-species">Human</span></p>
+			<p><strong>House: </strong><span id="info-house">Gryffindor</span></p>
+			<p><strong>Patronus: </strong><span id="info-patronus">Stag</span></p>
+			<p><strong>Personality: </strong><span id="info-personality">Angsty But Brave</span></p>
+			<p><strong>Tagline: </strong><span id="info-tagline">Four-Eyed Hero</span></p>
+		</div>
+	</div>
+</div>
+
+<!--ecard generator-->
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<header>
+			<h1>eCard Generator</h1>
+			<p class="subtitle">Generate Harry Potter E-Cards for all moods.</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Character</h2>
+				<select name="char" id="char">
+					<option selected disabled value="empty-state">Choose a Character</option>
+					<option value="hp">Harry Potter</option>
+					<option value="hg">Hermione Granger</option>
+					<option value="rw">Ron Weasley</option>
+					<option value="ll">Luna Lovegood</option>
+					<option value="nl">Neville Longbottom</option>
+					<option value="ss">Severus Snape</option>
+					<option value="mm">Minerva McGonagall</option>
+					<option value="ad">Albus Dumbledore</option>
+					<option value="rh">Rubeus Hagrid</option>
+					<option value="sb">Sirius Black</option>
+					<option value="rl">Remus Lupin</option>
+					<option value="nt">Nymphadora Tonks</option>
+					<option value="mw">Molly Weasley</option>
+					<option value="dm">Draco Malfoy</option>
+					<option value="db">Dobby</option>
+					<option value="vm">Voldemort</option>
+				</select>
+			</div>
+			<div class="second-step">
+				<h2>2. Enjoy Your eCard!</h2>
+				<div id="postcard">
+					<p id="greeting">To Generate an E-Card</p>
+					<p id="chrc-heading">Choose a character.</p>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<!--external javascript page containing object data of character information-->
+<script src="js/char-data1.js"></script>
+<script>
+//function that takes values from an object and displays on page when character name chosen
+	document.getElementById('charac-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('info-pic').src= 'img1/'+selected+'.jpg';
+		document.getElementById('info-name').textContent = charData[this.value].name;
+		document.getElementById('info-birthdate').textContent = charData[this.value].birthdate;
+		document.getElementById('info-gender').textContent = charData[this.value].gender;
+		document.getElementById('info-species').textContent = charData[this.value].species;
+		document.getElementById('info-house').textContent = charData[this.value].house;
+		document.getElementById('info-patronus').textContent = charData[this.value].patronus;
+		document.getElementById('info-personality').textContent = charData[this.value].personality;
+		document.getElementById('info-tagline').textContent = charData[this.value].tagline;
+	};
+</script>
+
+<footer>
+	<p>Copyright © Harry Potter and the Cursed Child</p>
+</footer>
+
+<!--Quotes Array-->
+<script>
+	var quotesArray = [
+		'Yer a Wizard Harry. - Rubeus Hagrid',
+		'I solemnly swear that I am up to no good. — Harry Potter',
+		'NOT MY DAUGHTER, YOU BITCH! — Molly Weasley',
+		'Just because you have the emotional range of a teaspoon does not mean we all have. — Hermione Granger',
+		'If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals. — Sirius Black',
+		'Wit beyond measure is man’s greatest treasure. — Rowena Ravenclaw',
+		'It is our choices, Harry, that show what we truly are, far more than our abilities. - Albus Dumbledore',
+		'To the well-organized mind, death is but the next great adventure. - Albus Dumbledore'
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+</script>
+
+<!--form to enter raffle-->
+<div class="container">
+	<h1>Ticket Raffle</h1>
+	<p>Tickets for <em>Harry Potter and the Cursed Child</em> on Broadway are in high demand. Fill in your
+		 information below for a chance to win free tickets!</p>
+	<div class="form-container">
+		<form id="vol-form" class="raffleForm" action="https://www.harrypottertheplay.com/us/ticket-info/">
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" type="text"><span id="first"></span>
+			</div>
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" type="text"><span id="second"></span>
+			</div>
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email"><span id="eml"></span>
+			</div>
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" type="tel">
+			</div>
+			<div class="form-section">
+				<label for="from-num" class="from-label">Tickets Needed:</label>
+				<select id="from-num" name="from-num">
+					<option value="blank"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<input id="submit" type="submit" onclick="formValidate()" value="Submit"><br />
+		</form>
+	</div>
+	<p>For more information please sign up to our mailing list <a href="https://www.harrypottertheplay.com/us/signup/">here</a>.</p>
+</div>
+<footer>
+	<p>Made in NY <br />Copyright © E-card Generator</p>
+</footer>
+
+<!--Form Validation-->
+<script type="text/javascript">
+function formValidate() {
+		emailValid();
+		firstName();
+}
+function emailValid() {
+	if (raffleForm.email.value == " ") {
+		document.getElementById("eml").innerHTML = "Invalid";
+	}
+	var x= /^([0-9A-Za-z_\-\.])+\@([A-Za-z])+\.([A-Za-z]{2,4})$/;
+		if (x.test(raffleForm.email.value) == false) {
+			document.getElementById("eml").innerHTML= "Invalid";
+		}
+}
+function firstName() {
+	var first= document.getElementById("first-name").value;
+	if (isNaN(first)) {
+		return true;
+	} else {
+			return false;
+			alert("No Numbers Allowed in First Name");
+	}
+}
+
+</script>
+<!--creates prompt for user and answers displayed on page-->
+<script type="text/javascript">
+
+	var potion = prompt("Given the choice, would you rather invent a potion that would guarantee you: Glory, Wisdom, Love, Power");
+	var text = 'The potion you have chosen is ' + potion + '. ' + 'Glory matches with House Gryffindor, Wisdom to Ravenclaw, Love to Hufflepuff, and Power to Slytherin. Use your response '
+							+ potion + ' to narrow down a character that belongs to your House. If you chose an option not provided, then I am sure that says a lot about yourself. Look below to see characters from all other Houses as well.';
+
+	document.getElementById("house").innerHTML= text;
+</script>
+
+<!--generates images of ecard from folder-->
+<script>
+	var char = document.getElementById('char');
+
+	char.onchange = function() {
+		// console.log('state index: ' + char.selectedIndex);
+		// console.log('state name: ' + char.options[char.selectedIndex].text);
+		// console.log('img/' + char.value + '@2x.jpg');
+		document.getElementById('postcard').style.backgroundImage = 'url(img/' + char.value + '@2x.jpg)';
+		document.getElementById('greeting').innerHTML = 'Greetings from';
+		document.getElementById('chrc-heading').innerHTML = char.options[char.selectedIndex].text;
+	}
+</script>
+
+</body>
+</html>

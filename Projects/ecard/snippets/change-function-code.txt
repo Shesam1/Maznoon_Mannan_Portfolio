@@ -1,0 +1,8 @@
+document.getElementById('info-name').textContent = charData[this.value].name;
+document.getElementById('info-birthdate').textContent = charData[this.value].birthdate;
+document.getElementById('info-gender').textContent = charData[this.value].gender;
+document.getElementById('info-species').textContent = charData[this.value].species;
+document.getElementById('info-house').textContent = charData[this.value].house;
+document.getElementById('info-patronus').textContent = charData[this.value].patronus;
+document.getElementById('info-personality').textContent= charData[this.value].personality;
+document.getElementById('info-tagline').textContent = charData[this.value].tagline;

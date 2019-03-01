@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Life Long Learner</title>
+<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="../js/move-top.js"></script>
+<script type="text/javascript" src="../js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+</head>
+
+<body>
+  <!--header-->
+	<div class="logo">
+		<div class="container">
+			<div class="logo-info">
+				<a href="homepage.html">
+					<h1>LLL</h1>
+					<span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+
+	<!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="hvr-bounce-to-bottom"><a href="homepage.html">Home</a></li>
+					<li><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programming<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a class="hvr-bounce-to-bottom" href="htmlpg.html">HTML</a></li>
+							<li><a class="hvr-bounce-to-bottom" href="csspg.html">CSS</a></li>
+							<li><a class="hvr-bounce-to-bottom" href="jquerypg.html">jQuery</a></li>
+							<li><a class="hvr-bounce-to-bottom" href="bootstrappg.html">Bootstrap</a></li>
+							<li><a class="hvr-bounce-to-bottom" href="dreamweaverpg.html">Dreamweaver</a></li>
+						</ul>
+					</li>
+					<li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+		</nav>
+	</div>
+	<!--//navigation-->
+
+	<!-- Jumbotron-->
+		<div class="jumbotron text-center" id="jumbb">
+        <div class="container">
+          <h1 class="display-3">Bootstrap</h1>
+        </div>
+    </div>
+	<!-- //Jumbotron -->
+
+  <!--about-->
+	<div class="about">
+		<div class="container">
+			<div class="about-text">
+				<div class="col-md-6 about-text-left">
+					<img src="../images/bs.png" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 about-text-right">
+					<p>Bootstrap is a free front-end framework of HTML, CSS, <strong>AND</strong> Javascript that makes it easier for developers to build
+							more responsive webpages.</p><br />
+					<h4>Useful Links:</h4>
+					<ul class="links">
+						<li><a href="https://www.w3schools.com/bootstrap4/default.asp" target="new">W3Schools: Learn Bootstrap from one of the most popular free website on programming websites.</a></li>
+						<li><a href="https://bootstrapious.com/tutorials" target="new">Bootstrapious: Learn different aspects of bootstrap including navbar and carousel.</a></li>
+						<li><a href="http://getbootstrap.com/docs/4.0/examples/" target="new">getBootstrap: Provides examples on how bootstrap can make a website look.</a></li>
+						<li><a href="https://mdbootstrap.com/bootstrap-tutorial/" target="new">mdBootstrap: Provides videos and live demos and tutorials for bootstrap.</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv" target="new">The Net Ninja: A set of tutorial videos on bootstrap for beginners.</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+	</div>
+	<!--//about-->
+
+  <!-- footer -->
+	<div class="copy">
+		<div class="container">
+			<div class="copy-left">
+				<p>Copyright &copy; 2018 LLL | All rights reserved.</p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

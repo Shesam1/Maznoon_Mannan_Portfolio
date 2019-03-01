@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	min-width: 600px;
+}
+
+#left_col {
+	float: left;
+	width: 200px;
+}
+
+#right_col {
+	float: right;
+	width: 200px;
+}
+
+#page_content {
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+#container {
+
+	background-image: url('../Marquee/rise.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1100px;
+	height: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: 'Arvo', serif;
+	font-size: large;
+	color: white;
+	background-color: #000000;
+
+}

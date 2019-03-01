@@ -1,0 +1,8 @@
+'Yer a Wizard Harry. - Rubeus Hagrid',
+'I solemnly swear that I am up to no good. — Harry Potter',
+'NOT MY DAUGHTER, YOU BITCH! — Molly Weasley',
+'Just because you have the emotional range of a teaspoon does not mean we all have. — Hermione Granger',
+'If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals. — Sirius Black',
+'Wit beyond measure is man’s greatest treasure. — Rowena Ravenclaw',
+'It is our choices, Harry, that show what we truly are, far more than our abilities. - Albus Dumbledore',
+'To the well-organized mind, death is but the next great adventure. - Albus Dumbledore'

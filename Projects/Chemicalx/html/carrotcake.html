@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/homepage.css">
+  <script type="text/javascript" src="../js/rating.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+        <header>
+
+          <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="homepage.html"><img src="../img/x.jpg" alt="chemical " height="100px" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown1">
+                  <a class="dropdown-item" href="cakes.html">Cakes</a>
+                  <a class="dropdown-item" href="pastries.html">Pastries</a>
+                  <a class="dropdown-item" href="pies.html">Pies</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    <!-- /Navbar -->
+    <main role="main">
+
+      <div class="container section" id="recipe-content">
+      <div class="inner-container">
+    <!-- Info holder -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="row" id="info">
+          <div class="col-md-5">
+            <h1 class="recipe-title text-center text-body" id="pink2">Carrot Cake<br /></h1>
+            <p>Recipe by: Chris Morocco</p>
+            <p>Perfect recipe for intermediate level bakers to bite into.</p>
+            <p class="inner"><button type="button" class="btn btn-secondary" id="like" onclick="likeCount()">Like</button></p>
+            <p class="inner"><button type="button" class="btn btn-secondary" id="dislike" onclick="dislikeCount()">Dislike</button></p>
+            <div id="number"></div>
+            <p id="replace"></p>
+          </div>
+          <div class="col-md-7">
+            <img class="info-image img-fluid mx-auto" src="../img/glutencarrot.jpg" alt="Carrot Cake">
+          </div>
+        </div>
+    <!-- /Info holder -->
+
+    <!-- widgets -->
+    <div class ="widgets">
+      <nav class="navbar navbar-expand-lg bg-dark">
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link">Servings: 8-12</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Prep Time: 30 min </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Cook Time: 40 min</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Difficulty: Intermediate</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+    <!-- /widgets -->
+
+    <div class= "content">
+      <div class="row">
+        <div class= "ingredients col-sm-7">
+          <ul>
+          <h3 class="pink">Ingredients</h3>
+          <p><strong>Cake</strong>
+            <li>½ cup virgin coconut oil, melted, plus more for pans</li>
+            <li>3 cups almond flour, plus more for dusting pans</li>
+            <li>1½ tsp. kosher salt</li>
+            <li>1 tsp. baking powder</li>
+            <li>1 tsp. ground cardamom</li>
+            <li>1 tsp. ground cinnamon</li>
+            <li>1 tsp. ground ginger</li>
+            <li>½ tsp. baking soda</li>
+            <li>5 large eggs</li>
+            <li>1¼ cups (packed) dark brown sugar</li>
+            <li>1 tsp. vanilla extract</li>
+            <li>10 oz. carrots, peeled, coarsely shredded,squeezed firmly to expel excess water</li>
+            <li>¾ cup shredded unsweetened coconut</li>
+            <li>¾ cup walnuts, finely chopped</li>
+            <li>½ cup golden raisins</li>
+            <strong>Frosting and Assembly</strong>
+            <li>8 oz. cream cheese, room temperature</li>
+            <li>½ cup (1 stick) unsalted butter, room temperature</li>
+            <li>1¼ cups gluten-free powdered sugar</li>
+            <li>⅓ cup Greek yogurt</li>
+            <li>1 tsp. vanilla extract</li>
+            <li>Pinch of kosher salt</li></p>
+          </ul>
+        </div>
+        <div class="col-sm-5" id="ads">
+          <img class="info-image img-fluid mx-auto" src="../img/amazonfresh.jpg" alt="Amazon Fresh Ad">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="steps">
+        <h4 class="pink">RECIPE PREPARATION</h4> <br />
+        <h5><em>Cake</em></h5>
+        <p>Preheat oven to 350°. <br />
+          Grease two 8" parchment-lined round cake pans with oil, then dust with almond flour, tapping out excess.<br />
+          Whisk salt, baking powder, cardamom, cinnamon, ginger, baking soda, and remaining 3 cups flour in a medium bowl.<br />
+          Using an electric mixer on medium-high speed, beat eggs and brown sugar in a large bowl until more than tripled in volume and mixture holds a ribbon for several seconds when drizzled over itself, 5–7 minutes. (Beating the eggs thoroughly in this stage goes a long way toward creating an aerated, light crumb, which is critical when using gluten-free ingredients.)<br />
+          Beat in vanilla.<br />
+          Toss carrots, coconut, walnuts, raisins, and remaining ½ cup oil in another medium bowl.<br />
+          Reduce mixer speed to low. <br />
+          Add flour mixture in 3 additions, alternating with carrot mixture in 3 additions, to egg mixture, beating well after each addition.<br />
+          Divide batter between prepared pans. <br />
+          Bake cake until lightly browned across the top, a tester inserted into the center comes out clean, and the top springs back when gently poked, 33–36 minutes. <br />
+          Let cool 10 minutes. <br />
+          Carefully run a knife around edges of pans to release cake, then invert onto a wire rack. Let cool completely.</p><br />
+        <h5><em>Frosting and Assembly</em></h5>
+        <p>Using electric mixer on medium-high speed, beat cream cheese and butter in a large bowl, scraping down as needed, until very smooth, about 2 minutes. <br />
+          Reduce mixer speed to low and add powdered sugar. <br />
+          Beat until combined. <br />
+          Add yogurt, vanilla, and salt and increase speed to medium-high. <br />
+          Beat, scraping down occasionally, until light and airy, about 4 minutes.<br />
+          Chill 10 minutes if needed to stiffen slightly to a spreadable consistently.<br />
+          Arrange one cake round domed side down on a large plate or platter. <br />
+          Cover top and sides with one-third of frosting.<br />
+          Top with remaining cake layer, domed side up. <br />
+          Coat top and sides with remaining frosting.<br />
+          Do Ahead: Cake can be made 3 days ahead. Cover with a cake dome and chill.</p>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="reviews">
+      <h4 class="pink">REVIEWS</h4> <br /> <br />
+      <div class="review-item">
+        <p class="post"><b>
+          Pacman &nbsp; &nbsp;| &nbsp; 1 day ago &nbsp;| &nbsp; 200 views</b></p>
+
+        <p>I made this for Mother's Day. It turned out so well. I had no problems with the cake sticking in the pan (lined with parchment,
+          greased and dusted with almost flour). The cake tasted great and the frosting was perfection. Only change I would make is
+          possibly chopping up the raisins a bit.</p>
+      </div>
+      <hr class="recipe-divide">
+      <div class="review-item">
+          <p class="post"><b>
+              Spiderman &nbsp; &nbsp;| &nbsp; 5 days ago &nbsp;| &nbsp; 500 views</b></p>
+
+        <p>This turned out terribly.The use of coconut oil resulted in a greasy mouthfeel, and the once-sweet flavor of the carrots was
+          flattened out and metallic. All of the ingredients were fresh and tasted great before mixing. What a waste of almond flour! I can't
+          rate the frosting, as I was too disappointed in the results to bother trying to cover up the off-flavor and poor texture.</p>
+      </div>
+      <hr class="recipe-divide">
+      <form id="vol-form">
+        <p>Please write a review!</p>
+        <textarea name="" class="formrev" id="review" cols="30" rows="7" placeholder="Review"></textarea><br />
+      <button type="button" class="btn btn-secondary" id="revbtn">Submit</button>
+	</form>
+    </div>
+        <hr class="divider">
+      </div>
+
+      </div>
+      <!-- /container section-->
+
+      <!-- Footer -->
+      <footer class="container">
+        <hr><br />
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 Mannan, Inc.</p>
+        <div class="sapi text-center">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" style="margin-bottom: 10px"></script>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </main>
+
+    <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Inspired by themes found on getbootstrap.com & http://professorbrian.com/et710/bs4/9.html -->
+<!-- recipe and cake image taken from https://www.bonappetit.com/recipe/gluten-free-carrot-cake -->
+<!-- amazon fresh image taken from https://techcrunch.com/2013/12/05/amazons-grocery-delivery-service-amazonfresh-may-launch-in-sf-next-week/ -->
+</html>

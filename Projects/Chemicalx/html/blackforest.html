@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/homepage.css">
+  <script type="text/javascript" src="../js/rating.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+        <header>
+
+          <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="homepage.html"><img src="../img/x.jpg" alt="chemical " height="100px" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown1">
+                  <a class="dropdown-item" href="cakes.html">Cakes</a>
+                  <a class="dropdown-item" href="pastries.html">Pastries</a>
+                  <a class="dropdown-item" href="pies.html">Pies</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    <!-- /Navbar -->
+    <main role="main">
+
+      <div class="container section" id="recipe-content">
+      <div class="inner-container">
+    <!-- Info holder -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="row" id="info">
+          <div class="col-md-5">
+            <h1 class="recipe-title text-center text-body" id="pink2">Black Forest Cake<br /></h1>
+            <p>Recipe by: Linda Greer</p>
+            <p>Perfect recipe for intermediate level bakers to bite into.</p>
+            <p class="inner"><button type="button" class="btn btn-secondary" id="like" onclick="likeCount()">Like</button></p>
+            <p class="inner"><button type="button" class="btn btn-secondary" id="dislike" onclick="dislikeCount()">Dislike</button></p>
+            <div id="number"></div>
+            <p id="replace"></p>
+          </div>
+          <div class="col-md-7">
+            <img class="info-image img-fluid mx-auto" src="../img/forest.jpg" alt="Black Forest Cake">
+          </div>
+        </div>
+    <!-- /Info holder -->
+
+    <!-- widgets -->
+    <div class ="widgets">
+      <nav class="navbar navbar-expand-lg bg-dark">
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link">Servings: 12</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Prep Time: 1 hr</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Cook Time: 45 min</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Difficulty: Intermediate</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+    <!-- /widgets -->
+
+    <div class= "content">
+      <div class="row">
+        <div class= "ingredients col-sm-7">
+          <ul>
+          <h3 class="pink">Ingredients</h3>
+          <p><strong>Cake</strong>
+            <li>2 1/8 all-purpose flour</li>
+            <li>2 cups white sugar</li>
+            <li>3/4 cup unsweetened cocoa powder</li>
+            <li>1 1/2 tsp. baking powder</li>
+            <li>3/4 tsp. baking soda</li>
+            <li>3/4 tsp. salt</li>
+            <li>3 eggs</li>
+            <li>1 cup milk</li>
+            <li>1/2 cup vegetable oil</li>
+            <li>1 tbs. vanilla extract</li>
+            <strong>Frosting And Assembly</strong>
+            <li>2 (20 oz.) cans pitted sour cherries</li>
+            <li>1 cup white sugar</li>
+            <li>1/4 cup cornstarch</li>
+            <li>1 teaspoon vanilla extract</li>
+            <li>3 cups heavy whipping cream</li>
+            <li>1/3 cup confectioners' sugar</li></p>
+          </ul>
+        </div>
+        <div class="col-sm-5" id="ads">
+          <img class="info-image img-fluid mx-auto" src="../img/amazonfresh.jpg" alt="Amazon Fresh Ad">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="steps">
+        <h4 class="pink">RECIPE PREPARATION</h4> <br />
+        <h5><em>Cake</em></h5>
+        <p>Preheat oven to 350°. <br />
+          Grease and flour two 9 inch, round, cake pans; cover bottoms with waxed paper. In a large bowl, combine flour, 2 cups sugar, cocoa, baking powder,
+          baking soda, and salt. Add eggs, milk, oil, and 1 tablespoon vanilla; beat until well blended. Pour batter into prepared pans.<br />
+
+          Bake for 35 minutes, or until wooden toothpick inserted in centers comes out clean. Cool layers in pans on wire racks 10 minutes.
+          Loosen edges, and remove to racks to cool completely.<br />
+
+          <h5><em>Frosting and Assembly</em></h5>
+
+          Drain cherries, reserving 1/2 cup juice. Combine reserved juice, cherries, 1 cup sugar and cornstarch in a 2 quart
+          saucepan. Cook over low heat until thickened, stirring constantly. Stir in 1 teaspoon vanilla. Cool before using.<br />
+
+          Combine whipping cream and confectioner's sugar in a chilled medium bowl. Beat with an electric mixer at high speed
+          until stiff peaks form.<br />
+
+          With long serrated knife, split each cake layer horizontally in half. Tear one split layer into crumbs; set aside.
+          Reserve 1 1/2 cups Frosting for decorating cake; set aside. Gently brush loose crumbs off top and side of each
+          cake layer with pasty brush or hands.<br />
+
+          To assemble, place one cake layer on cake plate. Spread with 1 cup frosting; top with 3/4 cup cherry topping.
+          Top with second cake layer; repeat layers of frosting and cherry topping. Top with third cake layer.
+          Frost side of cake. Pat reserved crumbs onto frosting on side of cake. Spoon reserved frosting into pastry bag
+          fitted with star decorator tip. Pipe around top and bottom edges of cake. Spoon remaining cherry topping onto
+          top of cake.<br /></p><br />
+
+
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="reviews">
+      <h4 class="pink">REVIEWS</h4> <br /> <br />
+      <div class="review-item">
+        <p class="post"><b>
+          Pacman &nbsp; &nbsp;| &nbsp; 1 day ago &nbsp;| &nbsp; 200 views</b></p>
+
+        <p>I made this for Mother's Day. It turned out so well. I had no problems with the cake sticking in the pan (lined with parchment,
+          greased and dusted with almost flour). The cake tasted great and the frosting was perfection. Only change I would make is
+          possibly chopping up the raisins a bit.</p>
+      </div>
+      <hr class="recipe-divide">
+      <div class="review-item">
+          <p class="post"><b>
+              Spiderman &nbsp; &nbsp;| &nbsp; 5 days ago &nbsp;| &nbsp; 500 views</b></p>
+
+        <p>This turned out terribly.The use of coconut oil resulted in a greasy mouthfeel, and the once-sweet flavor of the carrots was
+          flattened out and metallic. All of the ingredients were fresh and tasted great before mixing. What a waste of almond flour! I can't
+          rate the frosting, as I was too disappointed in the results to bother trying to cover up the off-flavor and poor texture.</p>
+      </div>
+      <hr class="recipe-divide">
+      <form id="vol-form">
+        <p>Please write a review!</p>
+        <textarea name="" class="formrev" id="review" cols="30" rows="7" placeholder="Review"></textarea><br />
+      <button type="button" class="btn btn-secondary" id="revbtn">Submit</button>
+	</form>
+    </div>
+        <hr class="divider">
+      </div>
+
+      </div>
+      <!-- /container section-->
+
+      <!-- Footer -->
+      <footer class="container">
+        <hr><br />
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2018 Mannan, Inc.</p>
+        <div class="sapi text-center">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" style="margin-bottom: 10px"></script>
+        </div>
+      </footer>
+      <!-- /Footer -->
+    </main>
+
+    <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Inspired by themes found on getbootstrap.com & http://professorbrian.com/et710/bs4/9.html -->
+<!-- recipe taken from https://www.allrecipes.com/recipe/8095/black-forest-cake-i/ -->
+<!-- pic taken from https://www.pinterest.com/tfruiti/black-forest/ -->
+<!-- amazon fresh image taken from https://techcrunch.com/2013/12/05/amazons-grocery-delivery-service-amazonfresh-may-launch-in-sf-next-week/ -->
+</html>
